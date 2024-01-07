@@ -12,4 +12,4 @@ this is a yocto layer used do domenstrate yocto project for beginners, providing
 
     source oe-init-environment
     bitbake-layers create-layer meta-electroembedded-mp3
-      bitbake-layers add-layer meta-electroembedded-mp3
+    bitbake-layers add-layer meta-electroembedded-mp3
