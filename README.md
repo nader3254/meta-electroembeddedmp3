@@ -7,7 +7,7 @@
 <ul>
   <li><a href="#first-yocto" > create your first yocto layer </a>
 </li>
-  <li><a href="#first-yocto-image" > create your first yocto layer </a></li>
+  <li><a href="#first-yocto-image" > create your first yocto image </a></li>
   <li>Milk</li>
 </ul>
 
@@ -22,7 +22,7 @@
 
 
 
-<h3 id="first-yocto-image">1. create your first yocto image </h3>
+<h3 id="first-yocto-image">2. create your first yocto image </h3>
 
 in yocto in order an image is just a recipe that describes how to make this image and add your packages inside it , We mean that in this section you will be able to make the following:-
 
