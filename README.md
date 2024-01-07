@@ -27,7 +27,7 @@ this is a yocto layer used do domenstrate yocto project for beginners, providing
 
 in yocto in order an image is just a recipe that describes how to make this image and add your packages inside it , We mean that in this section you will be able to make the following:-
 
-    	bitbake hello-mp3-image
+    bitbake hello-mp3-image
 
 as previously in order to create default yocto image we run this command:-
 
