@@ -1,17 +1,15 @@
 # meta-electoembedded-mp3
 
-  this is a yocto layer used do domenstrate yocto project for beginners, providing simple mp3 example and integrate it inside yocto
+this is a yocto layer used do domenstrate yocto project for beginners, providing simple mp3 example and integrate it inside yocto
 
+## content
 
-## content 
-  <a href="#" > create your first yocto layer </a>
-
-
+<a href="#" > create your first yocto layer </a>
 
 <h3 id="first-yocto">create your first yocto layer </h3>
 
 <p>in this section we will learn how to create first yocto layer</p>
 
     source oe-init-environment
-    bitbake-layers create-layer meta-electroembedded-mp3              
-	  bitbake-layers add-layer meta-electroembedded-mp3
+    bitbake-layers create-layer meta-electroembedded-mp3
+      bitbake-layers add-layer meta-electroembedded-mp3
