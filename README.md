@@ -8,7 +8,7 @@ this is a yocto layer used do domenstrate yocto project for beginners, providing
   <li><a href="#first-yocto" > create your first yocto layer </a>
 </li>
   <li><a href="#first-yocto-image" > create your first yocto image </a></li>
-  <li>Milk</li>
+  <!-- <li>Milk</li> -->
 </ul>
 
 <h3 id="first-yocto">1. create your first yocto layer </h3>

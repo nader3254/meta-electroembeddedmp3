@@ -12,9 +12,47 @@ IMAGE_ROOTFS_SIZE ?= "8192"
 IMAGE_ROOTFS_EXTRA_SPACE_append = "${@bb.utils.contains("DISTRO_FEATURES", "systemd", " + 4096", "" ,d)}"
 
 
-LICENSE_FLAGS_WHITELIST_append = " commercial_faad2"
-VIRTUAL-RUNTIME_init_manager = "systemd"
-VIRTUAL-RUNTIME_initscripts = "systemd-compat-units"
-DISTRO_FEATURES_append = " systemd"
-DISTRO_FEATURES_BACKFILL_CONSIDERED += "sysvinit"
-INIT_MANAGER = "systemd"
+
+
+
+
+
+
+
+
+
+IMAGE_FEATURES += " splash "
+IMAGE_INSTALL_append = " psplash "
+
+IMAGE_INSTALL_append = "hellowordcpp-local helloworldcpp-github"
+
+
+#PREFERRED_PROVIDER_virtual/splash = "plymouth"
+#IMAGE_INSTALL_append = "dracut plymouth "
+#SPLASH = "plymouth"
+#PACKAGECONFIG_append_pn-plymouth += "drm"
+#PLYMOUTH_THEME = "tribar"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# LICENSE_FLAGS_WHITELIST_append = " commercial_faad2"
+# VIRTUAL-RUNTIME_init_manager = "systemd"
+# VIRTUAL-RUNTIME_initscripts = "systemd-compat-units"
+# DISTRO_FEATURES_append = " systemd"
+# DISTRO_FEATURES_BACKFILL_CONSIDERED += "sysvinit"
+# INIT_MANAGER = "systemd"
