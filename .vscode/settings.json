@@ -19,5 +19,6 @@
         "files.eol": "\n",
         "files.trimTrailingWhitespace": false
     },
-    "task.saveBeforeRun": "always"
+    "task.saveBeforeRun": "always",
+    "C_Cpp.errorSquiggles": "disabled"
 }

@@ -27,12 +27,14 @@ IMAGE_ROOTFS_EXTRA_SPACE_append = "${@bb.utils.contains("DISTRO_FEATURES", "syst
 IMAGE_FEATURES += " splash "
 IMAGE_INSTALL_append = " psplash "
 
-IMAGE_INSTALL_append = " hellowordcpp-local \
-                         helloworldcpp-github \
-                         helloworldcpp-localpatch \
-                         hellocmake-local \
-                         hellojava \
-                         helloworldcpp-class-local"
+IMAGE_INSTALL_append = "hellowordcpp-local \
+                        helloworldcpp-github \
+                        helloworldcpp-localpatch \
+                        hellocmake-local \
+                        hellojava \
+                        helloworldcpp-class-local \
+                        helloworld-module"
+
 
 IMAGE_INSTALL += " openjre-8 openjdk-8"
 
