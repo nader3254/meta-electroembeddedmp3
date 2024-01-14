@@ -1,5 +1,8 @@
 SUMMARY = "ElectroEmbedded mp3 simple image."
 
+
+
+
 IMAGE_INSTALL = "packagegroup-core-boot ${CORE_IMAGE_EXTRA_INSTALL}"
 
 IMAGE_LINGUAS = " "
@@ -24,8 +27,17 @@ IMAGE_ROOTFS_EXTRA_SPACE_append = "${@bb.utils.contains("DISTRO_FEATURES", "syst
 IMAGE_FEATURES += " splash "
 IMAGE_INSTALL_append = " psplash "
 
-IMAGE_INSTALL_append = "hellowordcpp-local helloworldcpp-github"
+IMAGE_INSTALL_append = " hellowordcpp-local \
+                         helloworldcpp-github \
+                         helloworldcpp-localpatch \
+                         hellocmake-local \
+                         hellojava \
+                         helloworldcpp-class-local"
 
+IMAGE_INSTALL += " openjre-8 openjdk-8"
+
+
+# IMAGE_INSTALL_append =" openjdk "
 
 #PREFERRED_PROVIDER_virtual/splash = "plymouth"
 #IMAGE_INSTALL_append = "dracut plymouth "

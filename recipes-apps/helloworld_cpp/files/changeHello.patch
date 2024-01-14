@@ -1,0 +1,10 @@
+--- a/helloworld.cpp	2024-01-11 03:34:59.263121985 +0200
++++ b/helloworld.cpp	2024-01-11 03:34:55.991177984 +0200
+@@ -1,6 +1,6 @@
+ #include <iostream>
+ 
+ int main() {
+-    std::cout << "Hello, World! cpp local" << std::endl;
++    std::cout << "Hello, World! cpp local patched " << std::endl;
+     return 0;
+ }

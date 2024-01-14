@@ -1,7 +1,0 @@
---- a/helloworld.cpp
-+++ b/helloworld.cpp
-@@ -3,7 +3,7 @@
- int main() {
-     std::cout << "Hello World! cpp local" << std::endl;
-     return 0;
- }

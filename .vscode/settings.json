@@ -1,0 +1,23 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/nader/Desktop/ElectroEmbedded/workspace/poky-dunfell-23.0.21/meta-electroembeddedmp3/sources/poky/bitbake/lib",
+        "${workspaceFolder}/sources/poky/bitbake/lib",
+        "${workspaceFolder}/sources/poky/meta/lib"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/nader/Desktop/ElectroEmbedded/workspace/poky-dunfell-23.0.21/meta-electroembeddedmp3/sources/poky/bitbake/lib",
+        "${workspaceFolder}/sources/poky/bitbake/lib",
+        "${workspaceFolder}/sources/poky/meta/lib"
+    ],
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": "off",
+        "files.trimTrailingWhitespace": false
+    },
+    "[shellscript]": {
+        "files.eol": "\n",
+        "files.trimTrailingWhitespace": false
+    },
+    "task.saveBeforeRun": "always"
+}
