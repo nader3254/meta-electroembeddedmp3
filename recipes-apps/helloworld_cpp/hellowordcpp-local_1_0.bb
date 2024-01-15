@@ -24,8 +24,8 @@ do_install_prepend(){
 }
 
 do_install() {
-         install -d ${D}${bindir}
-         install -m 0755 helloworld_cpp ${D}${bindir}
+        install -d ${D}${bindir}
+        install -m 0755 helloworld_cpp ${D}${bindir}
 }
 
 # do_package_prepend(){
