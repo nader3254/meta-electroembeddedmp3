@@ -19,13 +19,31 @@ IMAGE_ROOTFS_EXTRA_SPACE_append = "${@bb.utils.contains("DISTRO_FEATURES", "syst
 
 
 
-
-
-
-
-
 IMAGE_FEATURES += " splash "
 IMAGE_INSTALL_append = " psplash "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 IMAGE_INSTALL_append = "hellowordcpp-local \
@@ -35,13 +53,14 @@ IMAGE_INSTALL_append = "hellowordcpp-local \
                         hellojava \
                         helloworldcpp-class-local \
                         helloworld-module \
-                        hellopakgconfig"
+                        hellopakgconfig \
+                        hellonodejs"
 
 
 IMAGE_INSTALL += " openjre-8 openjdk-8 python3"
 
 
-# IMAGE_INSTALL_append =" openjdk "
+# IMAGE_INSTALL_append ="  nodejs nodejs-npm "
 
 #PREFERRED_PROVIDER_virtual/splash = "plymouth"
 #IMAGE_INSTALL_append = "dracut plymouth "
