@@ -24,9 +24,9 @@ Welcome to our Yocto Project Recipes Collection! This repository contains four r
     - **Source:** `helloworld.cpp`
     - **Patch:** `changeHello.patch`
 
-4. **[Recipe 4: Advanced Hello World](helloworldcpp-class.MD)**
+4. **[Recipe 4: Using Custom Class Hello World](helloworldcpp-class.MD)**
     - **Summary:** Bitbake-layers recipe.
-    - **Description:** Recipe example for a CPP application with our custom class find it <a href="#">Here</a>.
+    - **Description:** Recipe example for a CPP application with our custom class find it <a href="#https://github.com/nader3254/meta-electroembeddedmp3/blob/main/classes/README.md">Here</a>.
     - **License:** CLOSED
     - **GitHub Repository:** [nader3254/codes_labs](https://github.com/nader3254/codes_labs)
     - **Commit:** a4a1f21faf869548990d6a3d85f2502f22c9b202
