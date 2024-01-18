@@ -8,7 +8,8 @@ this is a yocto layer used do domenstrate yocto project for beginners, providing
   <li><a href="#first-yocto" > create your first yocto layer </a>
 </li>
   <li><a href="#first-yocto-image" > create your first yocto image </a></li>
-    <li><a href="#first-yocto-image" > create your first yocto image </a></li>
+   <li><a href="https://docs.yoctoproject.org/bitbake/2.6/bitbake-user-manual/bitbake-user-manual-metadata.html#basic-syntax" > basic syntax of bitbake</a></li>
+ <li><a href="https://github.com/nader3254/meta-electroembeddedmp3/tree/main/recipes-apps" > adding applications examples </a></li>
 
 </ul>
 
@@ -19,10 +20,6 @@ this is a yocto layer used do domenstrate yocto project for beginners, providing
     source oe-init-environment
     bitbake-layers create-layer meta-electroembedded-mp3
     bitbake-layers add-layer meta-electroembedded-mp3
-
-
-
-
 
 <h3 id="first-yocto-image">2. create your first yocto image </h3>
 
@@ -49,7 +46,6 @@ now lets name the recipe for the images is recipes-images so we should go and cr
     5- conf/machines : contain all development boards supported in the layer.
     6- conf/distro : contain all distributions in the layer.
 
-
 All the previous was just a directories and optional to exist of course depending on your application.
 
 In our case we need the images directory to store our custom image recipe ,instead of building Linux image from scratch we will use the core image and modify it ,Why?because the poky Distribution is made to be a reference for developers and also a good practice technique.
@@ -59,6 +55,4 @@ In our case we need the images directory to store our custom image recipe ,inste
 If you go to /poky/meta/recipes-core/images you will find all the recipes for the core-image-XXXXXX images we are focusing on core image minimal so we will copy paste this recipe to our custom recipe named like this hello-mp3-image.bb located in poky/meta-hello-mp3/recipes-images/images/hello-mp3-image.bb
 and here we go our image is ready and we can make :-
 
-
     bitbake -k electroembedded-mp3
-
