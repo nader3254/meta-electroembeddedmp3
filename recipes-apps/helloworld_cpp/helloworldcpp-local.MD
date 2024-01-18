@@ -6,7 +6,7 @@
 <h2>Recipe Metadata</h2>
 
 <ul>
-    <li><strong>SUMMARY:</strong> bitbake-layers recipe</li>
+    <li><strong>SUMMARY:</strong> description for the recipe</li>
     <li><strong>DESCRIPTION:</strong> Recipe example for a CPP application onlocal</li>
     <li><strong>LICENSE:</strong> CLOSED</li>
     <li><strong>SRC_URI:</strong> file://helloworld.cpp</li>
