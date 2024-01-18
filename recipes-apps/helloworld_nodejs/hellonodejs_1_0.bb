@@ -17,11 +17,6 @@ S = "${WORKDIR}"
 INSTALL_DIR := "/home/root/hello_nodejs"
 
 
-# do_configure() {
-    
-#     echo "8.8.8.8" >> resolve.conf
-# }
-
 do_install(){
 
     install -d ${D}${INSTALL_DIR}

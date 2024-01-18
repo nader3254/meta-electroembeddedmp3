@@ -60,7 +60,25 @@ IMAGE_INSTALL_append = "hellowordcpp-local \
 IMAGE_INSTALL += " openjre-8 openjdk-8 python3"
 
 
-# IMAGE_INSTALL_append ="  nodejs nodejs-npm "
+IMAGE_INSTALL_append ="  nodejs nodejs-npm "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #PREFERRED_PROVIDER_virtual/splash = "plymouth"
 #IMAGE_INSTALL_append = "dracut plymouth "
