@@ -46,7 +46,7 @@ do_compile() {
 }
 </pre>
 
-    <p>Compiles the 'helloworld.cpp' file into an executable named 'helloworld_cpp' using the C++ compiler (${CXX}).</p>
+<p>Compiles the 'helloworld.cpp' file into an executable named 'helloworld_cpp' using the C++ compiler (${CXX}).</p>
 
 <h2>Install Prepend Hook</h2>
 
