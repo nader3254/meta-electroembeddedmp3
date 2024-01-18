@@ -40,20 +40,3 @@ do_install() {
 
 
 
-# do_compile() {
-#     echo "############################################"
-#     echo "################## JAVA ####################"
-#     echo "############################################"
-   
-#     echo "############################################"
-#     # find -name javac
-#     mkdir -p ${S}/build
-#     cp *.class ${S}/build/hellojava.class
-# }
-# DEPENDS = "classpath virtual/java-native"
-
-# inherit java
-
-
-# inherit java    
-
