@@ -31,12 +31,11 @@ do_install() {
     install -d ${D}/${bindir}
     echo "################## inistalling #################"  
     install -m 0755 ${S}/build/HelloWorldJava.class  ${D}/${bindir}
-    # mkdir -p ${D}/home/root
-    # install -m 0755 ${S}/build/HelloWorldJava.java  ${D}/home/root
+     mkdir -p ${D}/home/root
+    install -m 0755 ${S}/build/HelloWorldJava.java  ${D}/home/root
 }
 
 
-
-
+FILES_${PN} += "/home/root/HelloWorldJava.java"
 
 

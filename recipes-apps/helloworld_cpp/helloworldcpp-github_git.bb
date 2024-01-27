@@ -15,6 +15,7 @@ SRC_URI = "git://github.com/nader3254/codes_labs.git;protocol=https;branch=main 
             "
 SRCREV = "a4a1f21faf869548990d6a3d85f2502f22c9b202"
 
+
 S = "${WORKDIR}/git"
 
 

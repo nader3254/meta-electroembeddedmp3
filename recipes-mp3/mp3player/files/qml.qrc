@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Sidebar.qml</file>
+        <file>Playlist.qml</file>
+        <file>Player.qml</file>
+        <file>Footer.qml</file>
+        <file>qtquickcontrols2.conf</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>play.png</file>
+        <file>pause.png</file>
+        <file>music-note.png</file>
+        <file>electroEmbeddedLogo.png</file>
+        <file>youtube.png</file>
+        <file>soundcloud.png</file>
+        <file>previous.png</file>
+        <file>next-button.png</file>
+        <file>home.png</file>
+        <file>folder.png</file>
+        <file>volume.png</file>
+        <file>no-results.png</file>
+    </qresource>
+</RCC>

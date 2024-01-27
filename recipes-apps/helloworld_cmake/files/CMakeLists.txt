@@ -16,6 +16,30 @@ add_executable(helloworld_cmake ${SOURCES})
 
 install(TARGETS helloworld_cmake RUNTIME DESTINATION bin)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # # Specify the installation path
 # set(INSTALL_DIR /bin)
 
