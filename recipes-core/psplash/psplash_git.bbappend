@@ -1,13 +1,15 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
 
-SPLASH_IMAGES = "file://electroembedded_logo.png;outsuffix=default"
+SPLASH_IMAGES = "file://psplash-electroembedded-img.png;outsuffix=electroembedded"
+
 
 
 DEPENDS += "gdk-pixbuf-native"
 
 SRC_URI += "file://psplash-colors.h \
-	        file://psplash-bar-img.png"
+	        file://psplash-bar-img.png \
+			file://psplash-electroembedded-img.png"
 
 
 
@@ -22,4 +24,29 @@ do_configure_append () {
 	# for anyone updating the assets
 	cp ../psplash-bar-img.png ./psplash-bar.png
 	./make-image-header.sh ./psplash-bar.png BAR
+
+	cp ../psplash-electroembedded-img.png  ./psplash-poky.png
+	./make-image-header.sh ./psplash-poky.png POKY
+	rm -rf psplash-poky.png
+	
 }
+
+
+do_hello() {
+    echo "####################################################"
+    echo "####################################################"
+    echo "################# ELECTROEMBEDDED ##################"
+    echo "####################################################"
+    echo "####################################################"
+	cd ${WORKDIR}
+	echo "################################################"
+	for arg in $(ls | grep '^psplash-.*\-img.h$'); do
+		echo "#### Header= ${arg}"
+		cp ${S}/psplash-poky-img.h ./${arg}
+	done
+	echo "################################################"
+	rm -rf ${S}/psplash-poky-img.h
+}
+addtask hello after do_configure before do_compile 
+
+

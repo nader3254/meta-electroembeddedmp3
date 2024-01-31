@@ -47,49 +47,33 @@ IMAGE_INSTALL += " python3"
 
 
 
-####################################################
-##################### Custom Apps ##################
-####################################################
-# IMAGE_INSTALL_append = " hellowordcpp-local \
-#                          helloworldcpp-github \
-#                          helloworldcpp-localpatch \
-#                          helloworldcpp-class-local \
-#                          hellocmake-local \
-#                          hellojava \
-#                          hellopakgconfig \
-#                          helloworld-module"
-
-
-# configure our hellopakgconfig to use feature1
-# PACKAGECONFIG_append_pn-hellopakgconfig +=" feature1"
 
 
 
 
 
 
-
-# IMAGE_INSTALL_append ="  nodejs nodejs-npm "
-
-
-
-
-
-
-
-IMAGE_INSTALL_append = " gstreamer1.0-plugins-good \
+IMAGE_INSTALL_append = " gstreamer1.0 \
+                         gstreamer1.0-meta-base \
                          gstreamer1.0-plugins-base \
+                         gstreamer1.0-plugins-good \
+                         gstreamer1.0-plugins-base \
+                         gstreamer1.0-plugins-bad \
+                         gstreamer1.0-plugins-ugly \
                          gstd"
+
 
 IMAGE_INSTALL_append = " alsa-utils \
                          alsa-state"
-IMAGE_INSTALL_append = " mesa weston-init"
+
 
 # LICENSE_FLAGS_WHITELIST_append = " commercial  commercial_gstreamer1.0-plugins-ugly commercial_gstreamer1.0-plugins-ugly"
 
 
 
 DISTRO_FEATURES_append = " pulseaudio \
+                           dbus \
+                           systemd \
                            opengl \
                            nfs \
                            directfb \
@@ -97,14 +81,52 @@ DISTRO_FEATURES_append = " pulseaudio \
                            gstreamer"
 
 IMAGE_INSTALL_append = " pulseaudio \
-                         pulseaudio-module-dbus-protocol \
                          pulseaudio-server \
+                         pulseaudio-misc \
+                         pulseaudio-module-dbus-protocol \
                          pulseaudio-module-bluetooth-discover \
                          pulseaudio-module-bluetooth-policy \
                          pulseaudio-module-bluez5-device \
                          pulseaudio-module-bluez5-discover \
+                         dbus \
+                         mesa \
                          alsa-utils \
+                         alsa-conf \
+                         alsa-lib \
+                         alsa-conf-base \
+                         alsa-tools \
+                         alsa-utils-speakertest \
                          alsa-plugins"
+
+
+MACHINE_FEATURES += " bluetooth wifi"
+CORE_IMAGE_EXTRA_INSTALL = " rsync "
+DISTRO_FEATURES_append = " pi-bluetooth \
+                          bluez5 \
+                          bluetooth \
+                          wifi \
+                          systemd \
+                          linux-firmware-bcm43430 \
+                          linux-firmware-brcmfmac43430"
+
+IMAGE_INSTALL_append = " pi-bluetooth \
+                         bluez5 \
+                         rpio \
+                         rpi-gpio \
+                         bluez5-testtools \
+                         i2c-tools \
+                         hostapd \
+                         dhcp-server \
+                         udev-rules-rpi \
+                         bridge-utils \
+                         iptables \
+                         wpa-supplicant \
+                         linux-firmware-ralink \
+                         linux-firmware-bcm43430 \
+                         linux-firmware-rtl8192ce \
+                         linux-firmware-rtl8192cu \
+                         linux-firmware-rtl8192su \
+                         linux-firmware-rpidistro-bcm43430"
 
 
 
@@ -113,12 +135,13 @@ IMAGE_FEATURES_append =" ssh-server-dropbear \
 
 
 
+
 IMAGE_INSTALL_append = " kernel-modules "
-DISTRO_FEATURES_append += " wayland "
+# DISTRO_FEATURES_append += " wayland "
+# IMAGE_INSTALL_append = " weston-init weston"
 
 
-
-IMAGE_INSTALL_append = " taglib mp3 "
+IMAGE_INSTALL_append = " taglib iw mp3 udev-rules-rpi "
 
 
 
@@ -129,6 +152,8 @@ IMAGE_INSTALL_append +=" xinput \
                         qtdeclarative \
                         qtimageformats \
                         qtmultimedia \
+                        qtmultimedia-plugins \
+                        qtmultimedia-qmlplugins \
                         qtquickcontrols2 \
                         qtquickcontrols \
                         qtbase-plugins \
@@ -146,6 +171,17 @@ IMAGE_INSTALL_append +=" xinput \
 
 
 
+####################################################
+##################### Custom Apps ##################
+####################################################
+# IMAGE_INSTALL_append = " hellowordcpp-local \
+#                          helloworldcpp-github \
+#                          helloworldcpp-localpatch \
+#                          helloworldcpp-class-local \
+#                          hellocmake-local \
+#                          hellojava \
+#                          hellopakgconfig \
+#                          helloworld-module"
 
 
 
@@ -160,7 +196,20 @@ IMAGE_INSTALL_append +=" xinput \
 
 
 
-# MACHINE_FEATURES+="features/gpu screen touchscreen"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,11 @@
+--- a/rpi-base.inc	2024-01-02 17:31:51.118394000 +0200
++++ b/rpi-base.inc	2024-01-29 19:15:35.241307906 +0200
+@@ -90,7 +90,7 @@
+ BOOTFILES_DIR_NAME ?= "bootfiles"
+ 
+ # Set Raspberrypi splash image
+-SPLASH = "psplash-raspberrypi"
++SPLASH = "psplash-electroembedded"
+ 
+ def make_dtb_boot_files(d):
+     # Generate IMAGE_BOOT_FILES entries for device tree files listed in

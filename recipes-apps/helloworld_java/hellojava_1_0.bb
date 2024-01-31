@@ -11,7 +11,7 @@ S = "${WORKDIR}"
 
 RDEPENDS_${PN} = "java2-runtime"
 
-inherit java-library
+#inherit java-library
 
 
 do_compile() {

@@ -1,0 +1,646 @@
+psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_populate_lic: Removing hardcoded paths from sstate package: 'find /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sstate-build-populate_lic/ \( -name "*.la" -o -name "*-config" -o -name "*_config" -o -name "postinst-*" \) -type f | xargs grep -l -e '/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot' -e '/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native' -e '/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/hosttools' | tee /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sstate-build-populate_lic/fixmepath | xargs --no-run-if-empty sed -i -e 's:/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native:FIXMESTAGINGDIRHOST:g' -e 's:/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot:FIXMESTAGINGDIRTARGET:g' -e 's:/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/hosttools:FIXME_HOSTTOOLS_DIR:g''
++ cd /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/deploy-source-date-epoch
++ do_deploy_source_date_epoch
++ mkdir -p /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/deploy-source-date-epoch
+
++ [ -e /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/source-date-epoch/__source_date_epoch.txt ]
++ echo Deploying SDE from /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/source-date-epoch/__source_date_epoch.txt -> /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/deploy-source-date-epoch.
+Deploying SDE from /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/source-date-epoch/__source_date_epoch.txt -> /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/deploy-source-date-epoch.
++ cp -p /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/source-date-epoch/__source_date_epoch.txt /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/deploy-source-date-epoch/__source_date_epoch.txt
+
++ ret=0
++ trap  0
++ exit 0
+
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_deploy_source_date_epoch: Removing hardcoded paths from sstate package: 'find /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sstate-build-deploy_source_date_epoch/ \( -name "*.la" -o -name "*-config" -o -name "*_config" -o -name "postinst-*" \) -type f | xargs grep -l -e '/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot' -e '/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native' -e '/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/hosttools' | tee /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sstate-build-deploy_source_date_epoch/fixmepath | xargs --no-run-if-empty sed -i -e 's:/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native:FIXMESTAGINGDIRHOST:g' -e 's:/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot:FIXMESTAGINGDIRTARGET:g' -e 's:/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/hosttools:FIXME_HOSTTOOLS_DIR:g''
++ cd /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sstate-build-deploy_source_date_epoch/
++ sstate_create_package
++ [ -e /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/1a/43/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:1a43b476bc5a110d1133b10437e18e1eab216fe2b0f6b78cfe1c1f80cf21f273_deploy_source_date_epoch.tgz ]
+
++ dirname /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/1a/43/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:1a43b476bc5a110d1133b10437e18e1eab216fe2b0f6b78cfe1c1f80cf21f273_deploy_source_date_epoch.tgz
+
++ mkdir -p /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/1a/43
+
++ 
+mktemp
+ /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/1a/43/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:1a43b476bc5a110d1133b10437e18e1eab216fe2b0f6b78cfe1c1f80cf21f273_deploy_source_date_epoch.tgz.XXXXXXXX
+
+
++ cd /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sstate-build-populate_lic/
++ sstate_create_package
++ [ -e /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/d0/bc/sstate:psplash::0.1+gitAUTOINC+0a902f7cd8:r15::3:d0bc9e2535eaa90983672fd83d87477cc0214012f336b809e165f5170d84e4a8_populate_lic.tgz ]
+
++ dirname /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/d0/bc/sstate:psplash::0.1+gitAUTOINC+0a902f7cd8:r15::3:d0bc9e2535eaa90983672fd83d87477cc0214012f336b809e165f5170d84e4a8_populate_lic.tgz
+
++ mkdir -p /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/d0/bc
+
++ mktemp /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/d0/bc/sstate:psplash::0.1+gitAUTOINC+0a902f7cd8:r15::3:d0bc9e2535eaa90983672fd83d87477cc0214012f336b809e165f5170d84e4a8_populate_lic.tgz.XXXXXXXX
+
++ TFILE=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/1a/43/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:1a43b476bc5a110d1133b10437e18e1eab216fe2b0f6b78cfe1c1f80cf21f273_deploy_source_date_epoch.tgz.lN5BU45f
++ OPT=-czS
+
++ command -v pigz
+
++ [ -x  ]
+
++ ls -A
+
++ TFILE=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/d0/bc/sstate:psplash::0.1+gitAUTOINC+0a902f7cd8:r15::3:d0bc9e2535eaa90983672fd83d87477cc0214012f336b809e165f5170d84e4a8_populate_lic.tgz.KeCwa9dQ
++ OPT=-czS
+
++ command -v pigz
+
++ [ -x  ]
+
++ ls -A
+
++ [ deploy-source-date-epoch ]
++ set +e
++ tar -czS -f /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/1a/43/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:1a43b476bc5a110d1133b10437e18e1eab216fe2b0f6b78cfe1c1f80cf21f273_deploy_source_date_epoch.tgz.lN5BU45f deploy-source-date-epoch
+
++ [ license-destdir ]
++ set +e
++ tar -czS -f /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/d0/bc/sstate:psplash::0.1+gitAUTOINC+0a902f7cd8:r15::3:d0bc9e2535eaa90983672fd83d87477cc0214012f336b809e165f5170d84e4a8_populate_lic.tgz.KeCwa9dQ license-destdir
+
++ ret=0
++ [ 0 -ne 0 ]
++ set -e
++ chmod 0664 /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/1a/43/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:1a43b476bc5a110d1133b10437e18e1eab216fe2b0f6b78cfe1c1f80cf21f273_deploy_source_date_epoch.tgz.lN5BU45f
+
++ ret=0
++ [ 0 -ne 0 ]
++ set -e
++ chmod 0664 /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/d0/bc/sstate:psplash::0.1+gitAUTOINC+0a902f7cd8:r15::3:d0bc9e2535eaa90983672fd83d87477cc0214012f336b809e165f5170d84e4a8_populate_lic.tgz.KeCwa9dQ
+
++ [ -h /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/1a/43/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:1a43b476bc5a110d1133b10437e18e1eab216fe2b0f6b78cfe1c1f80cf21f273_deploy_source_date_epoch.tgz ]
++ [ ! -e /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/1a/43/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:1a43b476bc5a110d1133b10437e18e1eab216fe2b0f6b78cfe1c1f80cf21f273_deploy_source_date_epoch.tgz ]
++ ln /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/1a/43/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:1a43b476bc5a110d1133b10437e18e1eab216fe2b0f6b78cfe1c1f80cf21f273_deploy_source_date_epoch.tgz.lN5BU45f /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/1a/43/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:1a43b476bc5a110d1133b10437e18e1eab216fe2b0f6b78cfe1c1f80cf21f273_deploy_source_date_epoch.tgz
+
++ [ -h /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/d0/bc/sstate:psplash::0.1+gitAUTOINC+0a902f7cd8:r15::3:d0bc9e2535eaa90983672fd83d87477cc0214012f336b809e165f5170d84e4a8_populate_lic.tgz ]
++ [ ! -e /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/d0/bc/sstate:psplash::0.1+gitAUTOINC+0a902f7cd8:r15::3:d0bc9e2535eaa90983672fd83d87477cc0214012f336b809e165f5170d84e4a8_populate_lic.tgz ]
++ ln /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/d0/bc/sstate:psplash::0.1+gitAUTOINC+0a902f7cd8:r15::3:d0bc9e2535eaa90983672fd83d87477cc0214012f336b809e165f5170d84e4a8_populate_lic.tgz.KeCwa9dQ /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/d0/bc/sstate:psplash::0.1+gitAUTOINC+0a902f7cd8:r15::3:d0bc9e2535eaa90983672fd83d87477cc0214012f336b809e165f5170d84e4a8_populate_lic.tgz
+
++ rm /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/d0/bc/sstate:psplash::0.1+gitAUTOINC+0a902f7cd8:r15::3:d0bc9e2535eaa90983672fd83d87477cc0214012f336b809e165f5170d84e4a8_populate_lic.tgz.KeCwa9dQ
+
++ rm /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/1a/43/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:1a43b476bc5a110d1133b10437e18e1eab216fe2b0f6b78cfe1c1f80cf21f273_deploy_source_date_epoch.tgz.lN5BU45f
+
++ ret=0
++ trap  0
++ exit 0
+
++ ret=0
++ trap  0
++ exit 0
+
++ autotools_preconfigure
++ [ -n /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/configure.sstate -a -e /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/configure.sstate ]
++ ret=0
++ trap  0
++ exit 0
+
++ cd /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/build
++ do_configure
++ autotools_do_configure
++ PRUNE_M4=
+
++ find /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/git -ignore_readdir_race -name configure.in -o -name configure.ac
+
++ dirname /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/git/configure.ac
+
++ rm -f /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/git/configure
+
++ [ -e /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/git/configure.in -o -e /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/git/configure.ac ]
+
++ pwd
+
++ olddir=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/build
++ cd /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/git
+
++ mkdir -p /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot/usr/share/aclocal
+
++ ACLOCAL=aclocal --system-acdir=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot/usr/share/aclocal/
++ [ xdefault = xdefault ]
++ acpaths=
+
++ 
+find
+ /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/git
+ -ignore_readdir_race
++ 
+grep -v acinclude.m4
+
+ -maxdepth
+ 2
+ -name
+ *.m4
+
+
++ 
+grep
+ -v
+ aclocal.m4
+
+
++ 
+sort -u
+
++ 
+sed
+ -e
+ s,\(.*/\).*$,\1,
+
+
++ acpaths=  -I /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native/usr/share/aclocal/
+
++ automake --version
++ sed -e 1{s/.* //;s/\.[0-9]\+$//};q
+
++ AUTOV=1.16
++ automake --version
+
+automake (GNU automake) 1.16.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv2+: GNU GPL version 2 or later <https://gnu.org/licenses/gpl-2.0.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Tom Tromey <tromey@redhat.com>
+       and Alexandre Duret-Lutz <adl@gnu.org>.
+
++ echo AUTOV is 1.16
+AUTOV is 1.16
++ [ -d /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native/usr/share/aclocal-1.16 ]
++ ACLOCAL=aclocal --system-acdir=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot/usr/share/aclocal/ --automake-acdir=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native/usr/share/aclocal-1.16
+
++ echo --exclude=autopoint
+
++ grep -q aclocal
+
++ rm -f aclocal.m4
+
++ [ -e configure.in ]
++ CONFIGURE_AC=configure.ac
++ grep -q ^[[:space:]]*AM_GLIB_GNU_GETTEXT configure.ac
+
++ [ psplash != gettext ]
++ grep -q ^[[:space:]]*AM_GNU_GETTEXT configure.ac
+
++ mkdir -p m4
+
++ grep -q ^[[:space:]]*[AI][CT]_PROG_INTLTOOL configure.ac
+
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_configure: Executing ACLOCAL="aclocal --system-acdir=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot/usr/share/aclocal/ --automake-acdir=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native/usr/share/aclocal-1.16" autoreconf -Wcross --verbose --install --force --exclude=autopoint -I /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native/usr/share/aclocal/
++ bbnote Executing ACLOCAL="aclocal --system-acdir=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot/usr/share/aclocal/ --automake-acdir=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native/usr/share/aclocal-1.16" autoreconf -Wcross --verbose --install --force --exclude=autopoint -I /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native/usr/share/aclocal/
++ [ -p /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/temp/fifo.10339 ]
++ printf %b\0 bbnote Executing ACLOCAL="aclocal --system-acdir=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot/usr/share/aclocal/ --automake-acdir=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native/usr/share/aclocal-1.16" autoreconf -Wcross --verbose --install --force --exclude=autopoint -I /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native/usr/share/aclocal/
++ ACLOCAL=aclocal --system-acdir=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot/usr/share/aclocal/ --automake-acdir=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native/usr/share/aclocal-1.16 autoreconf -Wcross --verbose --install --force --exclude=autopoint -I /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native/usr/share/aclocal/
+
+autoreconf: Entering directory `.'
+
+autoreconf: configure.ac: not using Gettext
+
+autoreconf: running: aclocal --system-acdir=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot/usr/share/aclocal/ --automake-acdir=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native/usr/share/aclocal-1.16 -I /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native/usr/share/aclocal/ --force 
+
+autoreconf: configure.ac: tracing
+
+autoreconf: configure.ac: not using Libtool
+autoreconf: running: /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native/usr/bin/autoconf --include=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native/usr/share/aclocal/ --force
+
+autoreconf: running: /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native/usr/bin/autoheader --include=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native/usr/share/aclocal/ --force
+
+autoreconf: running: automake --add-missing --copy --force-missing
+
+configure.ac:7: installing './compile'
+
+configure.ac:3: installing './install-sh'
+
+configure.ac:3: installing './missing'
+
+Makefile.am: installing './INSTALL'
+
+Makefile.am: installing './depcomp'
+
+autoreconf: running: gnu-configize
+
+autoreconf: Leaving directory `.'
+
++ cd /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/build
++ [ -e /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/git/configure ]
++ oe_runconf
+
++ basename
+ /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/git/configure
+
++ cfgscript_name=configure
+
++ 
+python3 -c import os; print(os.path.relpath(os.path.dirname('/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/git/configure'), '.'))
+
++ cfgscript=../git/configure
++ [ -x ../git/configure ]
++ bbnote Running ../git/configure  --build=x86_64-linux 		  --host=arm-poky-linux-gnueabi 		  --target=arm-poky-linux-gnueabi 		  --prefix=/usr 		  --exec_prefix=/usr 		  --bindir=/usr/bin 		  --sbindir=/usr/sbin 		  --libexecdir=/usr/libexec 		  --datadir=/usr/share 		  --sysconfdir=/etc 		  --sharedstatedir=/com 		  --localstatedir=/var 		  --libdir=/usr/lib 		  --includedir=/usr/include 		  --oldincludedir=/usr/include 		  --infodir=/usr/share/info 		  --mandir=/usr/share/man 		  --disable-silent-rules 		  --disable-dependency-tracking 		  --with-libtool-sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot  --disable-static  --with-systemd 
++ [ -p /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/temp/fifo.10339 ]
+
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_configure: Running ../git/configure  --build=x86_64-linux 		  --host=arm-poky-linux-gnueabi 		  --target=arm-poky-linux-gnueabi 		  --prefix=/usr 		  --exec_prefix=/usr 		  --bindir=/usr/bin 		  --sbindir=/usr/sbin 		  --libexecdir=/usr/libexec 		  --datadir=/usr/share 		  --sysconfdir=/etc 		  --sharedstatedir=/com 		  --localstatedir=/var 		  --libdir=/usr/lib 		  --includedir=/usr/include 		  --oldincludedir=/usr/include 		  --infodir=/usr/share/info 		  --mandir=/usr/share/man 		  --disable-silent-rules 		  --disable-dependency-tracking 		  --with-libtool-sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot  --disable-static  --with-systemd 
++ printf %b\0 bbnote Running ../git/configure  --build=x86_64-linux 		  --host=arm-poky-linux-gnueabi 		  --target=arm-poky-linux-gnueabi 		  --prefix=/usr 		  --exec_prefix=/usr 		  --bindir=/usr/bin 		  --sbindir=/usr/sbin 		  --libexecdir=/usr/libexec 		  --datadir=/usr/share 		  --sysconfdir=/etc 		  --sharedstatedir=/com 		  --localstatedir=/var 		  --libdir=/usr/lib 		  --includedir=/usr/include 		  --oldincludedir=/usr/include 		  --infodir=/usr/share/info 		  --mandir=/usr/share/man 		  --disable-silent-rules 	  --disable-dependency-tracking 		  --with-libtool-sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot  --disable-static  --with-systemd 
++ CONFIG_SHELL=/bin/bash ../git/configure --build=x86_64-linux --host=arm-poky-linux-gnueabi --target=arm-poky-linux-gnueabi --prefix=/usr --exec_prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --libexecdir=/usr/libexec --datadir=/usr/share --sysconfdir=/etc --sharedstatedir=/com --localstatedir=/var --libdir=/usr/lib --includedir=/usr/include --oldincludedir=/usr/include --infodir=/usr/share/info --mandir=/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot --disable-static --with-systemd
+
+configure: WARNING: unrecognized options: --with-libtool-sysroot, --disable-static
+
+configure: loading site script /home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/site/endian-little
+
+configure: loading site script /home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/site/arm-common
+
+configure: loading site script /home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/site/arm-32
+
+configure: loading site script /home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/site/common-linux
+
+configure: loading site script /home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/site/common-glibc
+
+configure: loading site script /home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/site/arm-linux
+
+configure: loading site script /home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/site/common
+
+configure: loading site script /home/nader/Desktop/ElectroEmbedded/workspace/poky/meta-openembedded/meta-networking/site/endian-little
+
+configure: loading site script /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot/usr/share/arm-poky-linux-gnueabi_config_site.d/ncurses_config
+
+checking for a BSD-compatible install... 
+/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/hosttools/install -c
+
+checking whether build environment is sane... 
+yes
+
+checking for arm-poky-linux-gnueabi-strip... arm-poky-linux-gnueabi-strip
+
+checking for a thread-safe mkdir -p... 
+/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/hosttools/mkdir -p
+
+checking for gawk... 
+gawk
+
+checking whether make sets $(MAKE)... 
+yes
+
+checking whether make supports nested variables... 
+yes
+
+checking whether make supports the include directive... 
+yes (GNU style)
+
+checking for arm-poky-linux-gnueabi-gcc... arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot
+
+checking whether the C compiler works... 
+yes
+checking for C compiler default output file name... 
+a.out
+
+checking for suffix of executables... 
+
+
+checking whether we are cross compiling... 
+yes
+
+checking for suffix of object files... 
+o
+checking whether we are using the GNU C compiler... 
+yes
+
+checking whether arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot accepts -g... 
+yes
+
+checking for arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot option to accept ISO C89... 
+none needed
+
+checking whether arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot understands -c and -o together... 
+yes
+
+checking dependency style of arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot... none
+
+checking for library containing strerror... 
+none required
+
+checking for arm-poky-linux-gnueabi-gcc... (cached) arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot
+
+checking whether we are using the GNU C compiler... (cached) yes
+
+checking whether arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot accepts -g... (cached) yes
+
+checking for arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot option to accept ISO C89... (cached) 
+none needed
+
+checking whether arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot understands -c and -o together... 
+(cached) yes
+
+checking dependency style of arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot... 
+(cached) 
+none
+
+checking how to run the C preprocessor... 
+arm-poky-linux-gnueabi-gcc -E --sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security
+
+checking for grep that handles long lines and -e... 
+/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/hosttools/grep
+checking for egrep... 
+/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/hosttools/grep -E
+checking for ANSI C header files... 
+(cached) yes
+
+checking for arm-poky-linux-gnueabi-pkg-config... 
+no
+checking for pkg-config... 
+/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native/usr/bin/pkg-config
+
+configure: WARNING: using cross tools not prefixed with host triplet
+checking pkg-config is at least version 0.9.0... 
+yes
+
+checking for libsystemd >= 221... 
+yes
+
+configure: creating ./config.status
+
+config.status: creating Makefile
+
+config.status: creating config.h
+
+config.status: executing depfiles commands
+
+configure: WARNING: unrecognized options: --with-libtool-sysroot, --disable-static
+
++ cd /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/git
++ cp ../psplash-colors.h ./
+
++ cp ../psplash-bar-img.png ./psplash-bar.png
+
++ ./make-image-header.sh ./psplash-bar.png BAR
+
++ ret=0
++ trap  0
++ exit 0
+
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_configure: Checking autotools environment for common misconfiguration
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_configure: Checking configure output for unrecognised options
++ autotools_postconfigure
++ [ -n /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/configure.sstate ]
+
++ dirname /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/configure.sstate
+
++ mkdir -p /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15
+
++ echo 50ee0aa187ac0c8fafe749ac9b8f54db7cdf987a86d8dff19a54ba03b6d2947c
+
++ ret=0
++ trap  0
++ exit 0
+
++ oe_runmake
++ oe_runmake_call
++ bbnote make -j 4
++ [ -p /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/temp/fifo.11236 ]
++ printf %b\0 bbnote make -j 4
+
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_compile: make -j 4
++ make -j 4
+
+make  all-am
+
+make[1]: Entering directory '/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/build'
+arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot -DHAVE_CONFIG_H -I. -I../git   -DHAVE_SYSTEMD  -g -Wall -Wextra  -D_GNU_SOURCE -DFONT_HEADER=\"radeon-font.h\" -DFONT_DEF=radeon_font -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15=/usr/src/debug/psplash/0.1+gitAUTOINC+0a902f7cd8-r15                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15=/usr/src/debug/psplash/0.1+gitAUTOINC+0a902f7cd8-r15                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot=                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native=  -c -o psplash-psplash.o `test -f 'psplash.c' || echo '../git/'`psplash.c
+
+arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot -DHAVE_CONFIG_H -I. -I../git   -DHAVE_SYSTEMD  -g -Wall -Wextra  -D_GNU_SOURCE -DFONT_HEADER=\"radeon-font.h\" -DFONT_DEF=radeon_font -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15=/usr/src/debug/psplash/0.1+gitAUTOINC+0a902f7cd8-r15                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15=/usr/src/debug/psplash/0.1+gitAUTOINC+0a902f7cd8-r15                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot=                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native=  -c -o psplash-psplash-fb.o `test -f 'psplash-fb.c' || echo '../git/'`psplash-fb.c
+
+arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot -DHAVE_CONFIG_H -I. -I../git   -DHAVE_SYSTEMD  -g -Wall -Wextra  -D_GNU_SOURCE -DFONT_HEADER=\"radeon-font.h\" -DFONT_DEF=radeon_font -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15=/usr/src/debug/psplash/0.1+gitAUTOINC+0a902f7cd8-r15                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15=/usr/src/debug/psplash/0.1+gitAUTOINC+0a902f7cd8-r15                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot=                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native=  -c -o psplash-psplash-console.o `test -f 'psplash-console.c' || echo '../git/'`psplash-console.c
+
+arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot -DHAVE_CONFIG_H -I. -I../git    -g -Wall -Wextra  -D_GNU_SOURCE -DFONT_HEADER=\"radeon-font.h\" -DFONT_DEF=radeon_font -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15=/usr/src/debug/psplash/0.1+gitAUTOINC+0a902f7cd8-r15                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15=/usr/src/debug/psplash/0.1+gitAUTOINC+0a902f7cd8-r15                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot=                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native=  -c -o psplash-write.o ../git/psplash-write.c
+
+../git/psplash-write.c: In function 'main':
+
+../git/psplash-write.c:38:3: warning: ignoring return value of 'chdir', declared with attribute warn_unused_result [-Wunused-result]
+   38 |   chdir(rundir);
+      |   ^~~~~~~~~~~~~
+
+../git/psplash-write.c:48:3: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+   48 |   write(pipe_fd, argv[1], strlen(argv[1])+1);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot -DHAVE_CONFIG_H -I. -I../git    -g -Wall -Wextra  -D_GNU_SOURCE -DFONT_HEADER=\"radeon-font.h\" -DFONT_DEF=radeon_font -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15=/usr/src/debug/psplash/0.1+gitAUTOINC+0a902f7cd8-r15                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15=/usr/src/debug/psplash/0.1+gitAUTOINC+0a902f7cd8-r15                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot=                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native=  -c -o psplash_systemd-psplash-systemd.o `test -f 'psplash-systemd.c' || echo '../git/'`psplash-systemd.c
+
+../git/psplash.c: In function 'main':
+
+../git/psplash.c:263:3: warning: ignoring return value of 'chdir', declared with attribute warn_unused_result [-Wunused-result]
+  263 |   chdir(rundir);
+      |   ^~~~~~~~~~~~~
+
+arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot -g -Wall -Wextra  -D_GNU_SOURCE -DFONT_HEADER=\"radeon-font.h\" -DFONT_DEF=radeon_font -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15=/usr/src/debug/psplash/0.1+gitAUTOINC+0a902f7cd8-r15                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15=/usr/src/debug/psplash/0.1+gitAUTOINC+0a902f7cd8-r15                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot=                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native=   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now -o psplash-write psplash-write.o  
+
+../git/psplash-systemd.c: In function 'get_progress':
+../git/psplash-systemd.c:74:2: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+   74 |  write(pipe_fd, buffer, len + 1);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../git/psplash-systemd.c:78:3: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+   78 |   write(pipe_fd, "QUIT", 5);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+
+../git/psplash-systemd.c: In function 'main':
+../git/psplash-systemd.c:126:2: warning: ignoring return value of 'chdir', declared with attribute warn_unused_result [-Wunused-result]
+  126 |  chdir(rundir);
+      |  ^~~~~~~~~~~~~
+
+arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot -g -Wall -Wextra  -D_GNU_SOURCE -DFONT_HEADER=\"radeon-font.h\" -DFONT_DEF=radeon_font -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15=/usr/src/debug/psplash/0.1+gitAUTOINC+0a902f7cd8-r15                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15=/usr/src/debug/psplash/0.1+gitAUTOINC+0a902f7cd8-r15                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot=                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native=  -lsystemd -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now -o psplash-systemd psplash_systemd-psplash-systemd.o  
+
+arm-poky-linux-gnueabi-gcc  -mthumb -mfpu=neon-vfpv4 -mfloat-abi=hard -mcpu=cortex-a7 -fstack-protector-strong  -D_FORTIFY_SOURCE=2 -Wformat -Wformat-security -Werror=format-security --sysroot=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot -g -Wall -Wextra  -D_GNU_SOURCE -DFONT_HEADER=\"radeon-font.h\" -DFONT_DEF=radeon_font -O2 -pipe -g -feliminate-unused-debug-types -fmacro-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15=/usr/src/debug/psplash/0.1+gitAUTOINC+0a902f7cd8-r15                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15=/usr/src/debug/psplash/0.1+gitAUTOINC+0a902f7cd8-r15                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot=                      -fdebug-prefix-map=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native=  -lsystemd -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector-strong -Wl,-z,relro,-z,now -o psplash psplash-psplash.o psplash-psplash-fb.o psplash-psplash-console.o  
+
+make[1]: Leaving directory '/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/build'
+
++ ret=0
++ trap  0
++ exit 0
+
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_install: Direct dependencies are ['/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/libtool/libtool-native_2.4.6.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/pkgconfig/pkgconfig_git.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/pseudo/pseudo_git.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/gcc/gcc-cross_9.5.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.2.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-core/glibc/glibc_2.31.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/quilt/quilt-native_0.66.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-gnome/gdk-pixbuf/gdk-pixbuf_2.40.0.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/gcc/gcc-runtime_9.5.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/autoconf/autoconf_2.69.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/patch/patch_2.7.6.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/automake/automake_1.16.1.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/libtool/libtool-cross_2.4.6.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-core/systemd/systemd-systemctl-native.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-core/systemd/systemd_244.5.bb:do_populate_sysroot']
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_install: Installed into sysroot: []
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_install: Skipping as already exists in sysroot: ['libtool-native', 'pkgconfig-native', 'pseudo-native', 'gcc-cross-arm', 'opkg-utils', 'glibc', 'quilt-native', 'gdk-pixbuf-native', 'gnu-config-native', 'gcc-runtime', 'autoconf-native', 'patch-native', 'automake-native', 'libtool-cross', 'systemd-systemctl-native', 'systemd', 'texinfo-dummy-native', 'binutils-cross-arm', 'zlib-native', 'mpfr-native', 'linux-libc-headers', 'gmp-native', 'flex-native', 'xz-native', 'libmpc-native', 'libjpeg-turbo-native', 'glib-2.0-native', 'python3-native', 'gobject-introspection-native', 'libpng-native', 'gettext-minimal-native', 'shared-mime-info-native', 'meson-native', 'ninja-native', 'gtk-doc-native', 'libgcc', 'm4-native', 'attr-native', 'xz', 'bash-completion', 'base-files', 'libxkbcommon', 'kmod', 'shadow-sysroot', 'util-linux', 'base-passwd', 'libcap', 'shadow', 'acl', 'shadow-native', 'cmake-native', 'libffi-native', 'util-linux-native', 'libpcre-native', 'gettext-native', 'libtirpc-native', 'openssl-native', 'sqlite3-native', 'libnsl2-native', 'bzip2-native', 'readline-native', 'gdbm-native', 'libxml2-native', 'itstool-native', 'python3-setuptools-native', 're2c-native', 'wayland', 'util-macros', 'libxcb', 'xkeyboard-config', 'wayland-protocols', 'zlib', 'libcap-ng', 'libxcrypt', 'ncurses', 'attr', 'ncurses-native', 'curl-native', 'expat-native', 'libpcre2-native', 'libcap-ng-native', 'unzip-native', 'libxml2', 'libffi', 'expat', 'xcb-proto', 'xorgproto', 'libxau', 'libpthread-stubs', 'libxdmcp', 'python3', 'gdbm', 'bzip2', 'libtirpc', 'readline', 'autoconf-archive', 'libnsl2', 'sqlite3', 'openssl']
++ cd /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/build
++ do_install
++ autotools_do_install
++ oe_runmake DESTDIR=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image install
++ oe_runmake_call DESTDIR=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image install
++ bbnote make -j 4 DESTDIR=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image install
++ [ -p /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/temp/fifo.11284 ]
+
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_install: make -j 4 DESTDIR=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image install
++ printf %b\0 bbnote make -j 4 DESTDIR=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image install
++ make -j 4 DESTDIR=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image install
+
+make  install-am
+
+make[1]: Entering directory '/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/build'
+
+make[2]: Entering directory '/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/build'
+
+make[2]: Nothing to be done for 'install-data-am'.
+
+ /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/hosttools/mkdir -p '/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/usr/bin'
+
+  /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/hosttools/install -c psplash psplash-write psplash-systemd '/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/usr/bin'
+
+make[2]: Leaving directory '/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/build'
+
+make[1]: Leaving directory '/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/build'
+
++ [ -e /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/usr/share/info/dir ]
++ false
++ true
++ install -d /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/lib/systemd/system
+
++ install -m 644 /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/psplash-start.service /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image//lib/systemd/system
+
++ install -m 644 /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/psplash-systemd.service /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image//lib/systemd/system
+
++ install -d /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/usr/bin
+
++ install -m 0755 psplash-raspberrypi /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/usr/bin/psplash-raspberrypi
+
++ rm -f /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/usr/bin/psplash
+
++ ret=0
++ trap  0
++ exit 0
+
++ remove_libtool_la
++ [ 1 != 0 ]
++ find /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image -ignore_readdir_race -name *.la -delete
+
++ ret=0
++ trap  0
++ exit 0
+
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_populate_sysroot: Direct dependencies are ['virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-gnome/gdk-pixbuf/gdk-pixbuf_2.40.0.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-core/systemd/systemd_244.5.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/pseudo/pseudo_git.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/autoconf/autoconf_2.69.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/pkgconfig/pkgconfig_git.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-core/glibc/glibc_2.31.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/gcc/gcc-runtime_9.5.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/libtool/libtool-cross_2.4.6.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/automake/automake_1.16.1.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-core/systemd/systemd-systemctl-native.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/binutils/binutils-cross_2.34.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/patch/patch_2.7.6.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.2.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/libtool/libtool-native_2.4.6.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/gcc/gcc-cross_9.5.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/quilt/quilt-native_0.66.bb:do_populate_sysroot']
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_populate_sysroot: Installed into sysroot: []
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_populate_sysroot: Skipping as already exists in sysroot: ['gdk-pixbuf-native', 'systemd', 'pseudo-native', 'autoconf-native', 'gnu-config-native', 'pkgconfig-native', 'glibc', 'gcc-runtime', 'libtool-cross', 'automake-native', 'systemd-systemctl-native', 'binutils-cross-arm', 'patch-native', 'opkg-utils', 'libtool-native', 'gcc-cross-arm', 'quilt-native', 'python3-native', 'gobject-introspection-native', 'ninja-native', 'libpng-native', 'gettext-minimal-native', 'shared-mime-info-native', 'gtk-doc-native', 'libjpeg-turbo-native', 'glib-2.0-native', 'xz-native', 'meson-native', 'libcap', 'util-linux', 'base-passwd', 'kmod', 'acl', 'base-files', 'shadow-sysroot', 'xz', 'shadow-native', 'libxkbcommon', 'bash-completion', 'shadow', 'texinfo-dummy-native', 'm4-native', 'libmpc-native', 'gmp-native', 'zlib-native', 'mpfr-native', 'flex-native', 'linux-libc-headers', 'libgcc', 'attr-native', 'libnsl2-native', 'sqlite3-native', 'libtirpc-native', 'openssl-native', 'readline-native', 'libffi-native', 'util-linux-native', 'bzip2-native', 'gdbm-native', 're2c-native', 'itstool-native', 'libxml2-native', 'cmake-native', 'gettext-native', 'libpcre-native', 'python3-setuptools-native', 'ncurses', 'libcap-ng', 'libxcrypt', 'zlib', 'attr', 'wayland', 'wayland-protocols', 'xkeyboard-config', 'libxcb', 'util-macros', 'ncurses-native', 'libcap-ng-native', 'libpcre2-native', 'expat-native', 'curl-native', 'unzip-native', 'libffi', 'libxml2', 'expat', 'xorgproto', 'libpthread-stubs', 'libxau', 'xcb-proto', 'libxdmcp', 'python3', 'openssl', 'readline', 'bzip2', 'sqlite3', 'libnsl2', 'libtirpc', 'autoconf-archive', 'gdbm']
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_package: Direct dependencies are ['/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/libtool/libtool-native_2.4.6.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/pkgconfig/pkgconfig_git.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/pseudo/pseudo_git.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/gcc/gcc-cross_9.5.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.4.2.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-core/glibc/glibc_2.31.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/quilt/quilt-native_0.66.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-gnome/gdk-pixbuf/gdk-pixbuf_2.40.0.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/gnu-config/gnu-config_git.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/gcc/gcc-runtime_9.5.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/autoconf/autoconf_2.69.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/patch/patch_2.7.6.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/rpm/rpm_4.14.2.1.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/automake/automake_1.16.1.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/libtool/libtool-cross_2.4.6.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-core/systemd/systemd-systemctl-native.bb:do_populate_sysroot', 'virtual:native:/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-devtools/dwarfsrcfiles/dwarfsrcfiles.bb:do_populate_sysroot', '/home/nader/Desktop/ElectroEmbedded/workspace/poky/meta/recipes-core/systemd/systemd_244.5.bb:do_populate_sysroot']
++ sysroot_stage_all
++ sysroot_stage_dirs /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir
++ from=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image
++ to=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir
++ sysroot_stage_dir /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/usr/include /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/usr/include
++ src=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/usr/include
++ dest=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/usr/include
++ [ ! -d /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/usr/include ]
++ return
++ sysroot_stage_dir
+ /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/usr/lib /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/usr/lib
++ src=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/usr/lib
++ dest=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/usr/lib
++ [ ! -d /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/usr/lib ]
++ return
++ sysroot_stage_dir /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/lib /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/lib
++ src=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/lib
++ dest=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/lib
++ [ ! -d /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/lib ]
++ mkdir -p /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/lib
+
++ cd /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/lib
+
++ find . -print0
++ cpio --null -pdlu /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/lib
+
+0 blocks
+
++ sysroot_stage_dir /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/lib /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/lib
++ src=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/lib
++ dest=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/lib
++ [ ! -d /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/lib ]
++ mkdir -p /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/lib
+
++ cd /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/lib
+
++ find . -print0
++ cpio --null -pdlu /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/lib
+
+0 blocks
+
++ sysroot_stage_dir /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/usr/share /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/usr/share
++ src=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/usr/share
++ dest=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/usr/share
++ [ ! -d /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/image/usr/share ]
++ return
++ rm -rf /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/usr/share/man
+
++ rm -rf /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/usr/share/doc
+
++ rm -rf /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/usr/share/info
+
++ rm -rf /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/usr/share/X11/locale
+
++ rm -rf /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/usr/share/applications
+
++ rm -rf /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/usr/share/bash-completion
+
++ rm -rf /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/usr/share/fonts
+
++ rm -rf /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/usr/share/gtk-doc/html
+
++ rm -rf /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/usr/share/installed-tests
+
++ rm -rf /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/usr/share/locale
+
++ rm -rf /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/usr/share/pixmaps
+
++ rm -rf /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/usr/share/terminfo
+
++ rm -rf /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sysroot-destdir/usr/lib/psplash/ptest
+
++ ret=0
++ trap  0
++ exit 0
+
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_populate_sysroot: QA checking staging
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_populate_sysroot: Using umask 0o002 (not 22) for sstate packaging
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_populate_sysroot: Removing hardcoded paths from sstate package: 'find /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sstate-build-populate_sysroot/ \( -name "*.la" -o -name "*-config" -o -name "*_config" -o -name "postinst-*" \) -type f | xargs grep -l -e '/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot' -e '/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native' -e '/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/hosttools' | tee /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sstate-build-populate_sysroot/fixmepath | xargs --no-run-if-empty sed -i -e 's:/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot-native:FIXMESTAGINGDIRHOST:g' -e 's:/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/recipe-sysroot:FIXMESTAGINGDIRTARGET:g' -e 's:/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/hosttools:FIXME_HOSTTOOLS_DIR:g''
++ cd /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/psplash/0.1+gitAUTOINC+0a902f7cd8-r15/sstate-build-populate_sysroot/
++ sstate_create_package
++ [ -e /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/10/fc/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:10fc7e261998b600cc140f2295a9b406408ae6c0e6e40da1218c646bfeb9307e_populate_sysroot.tgz ]
+
++ dirname /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/10/fc/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:10fc7e261998b600cc140f2295a9b406408ae6c0e6e40da1218c646bfeb9307e_populate_sysroot.tgz
+
++ mkdir -p /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/10/fc
+
++ mktemp /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/10/fc/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:10fc7e261998b600cc140f2295a9b406408ae6c0e6e40da1218c646bfeb9307e_populate_sysroot.tgz.XXXXXXXX
+
++ TFILE=/home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/10/fc/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:10fc7e261998b600cc140f2295a9b406408ae6c0e6e40da1218c646bfeb9307e_populate_sysroot.tgz.pZECe2ng
++ OPT=-czS
+
++ command -v pigz
+
++ [ -x  ]
+
++ ls -A
+
++ [ sysroot-destdir ]
++ set +e
+
++ tar -czS -f /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/10/fc/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:10fc7e261998b600cc140f2295a9b406408ae6c0e6e40da1218c646bfeb9307e_populate_sysroot.tgz.pZECe2ng sysroot-destdir
+
++ ret=0
++ [ 0 -ne 0 ]
++ set -e
++ chmod 0664 /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/10/fc/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:10fc7e261998b600cc140f2295a9b406408ae6c0e6e40da1218c646bfeb9307e_populate_sysroot.tgz.pZECe2ng
+
++ [ -h /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/10/fc/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:10fc7e261998b600cc140f2295a9b406408ae6c0e6e40da1218c646bfeb9307e_populate_sysroot.tgz ]
++ [ ! -e /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/10/fc/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:10fc7e261998b600cc140f2295a9b406408ae6c0e6e40da1218c646bfeb9307e_populate_sysroot.tgz ]
+
++ ln /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/10/fc/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:10fc7e261998b600cc140f2295a9b406408ae6c0e6e40da1218c646bfeb9307e_populate_sysroot.tgz.pZECe2ng /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/10/fc/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:10fc7e261998b600cc140f2295a9b406408ae6c0e6e40da1218c646bfeb9307e_populate_sysroot.tgz
+
++ rm /home/nader/Desktop/ElectroEmbedded/workspace/poky/build/sstate-cache/10/fc/sstate:psplash:cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi:0.1+gitAUTOINC+0a902f7cd8:r15:cortexa7t2hf-neon-vfpv4:3:10fc7e261998b600cc140f2295a9b406408ae6c0e6e40da1218c646bfeb9307e_populate_sysroot.tgz.pZECe2ng
+
++ ret=0
++ trap  0
++ exit 0
+
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_package: Installed into sysroot: ['rpm-native', 'dwarfsrcfiles-native', 'file-native', 'db-native', 'popt-native', 'perl-native', 'libarchive-native', 'elfutils-native', 'dbus-native', 'e2fsprogs-native', 'lzo-native']
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_package: Skipping as already exists in sysroot: ['libtool-native', 'pkgconfig-native', 'pseudo-native', 'gcc-cross-arm', 'opkg-utils', 'glibc', 'quilt-native', 'gdk-pixbuf-native', 'gnu-config-native', 'gcc-runtime', 'autoconf-native', 'patch-native', 'automake-native', 'libtool-cross', 'systemd-systemctl-native', 'systemd', 'texinfo-dummy-native', 'binutils-cross-arm', 'zlib-native', 'mpfr-native', 'linux-libc-headers', 'xz-native', 'gmp-native', 'flex-native', 'libmpc-native', 'libjpeg-turbo-native', 'glib-2.0-native', 'python3-native', 'gobject-introspection-native', 'libpng-native', 'gettext-minimal-native', 'shared-mime-info-native', 'meson-native', 'ninja-native', 'gtk-doc-native', 'libgcc', 'm4-native', 'attr-native', 'openssl-native', 'bzip2-native', 'xz', 'bash-completion', 'base-files', 'libxkbcommon', 'kmod', 'shadow-sysroot', 'util-linux', 'base-passwd', 'libcap', 'shadow', 'acl', 'shadow-native', 'cmake-native', 'libffi-native', 'util-linux-native', 'libpcre-native', 'gettext-native', 'libtirpc-native', 'sqlite3-native', 'libnsl2-native', 'readline-native', 'gdbm-native', 'libxml2-native', 'itstool-native', 'python3-setuptools-native', 're2c-native', 'expat-native', 'wayland', 'util-macros', 'libxcb', 'xkeyboard-config', 'wayland-protocols', 'zlib', 'libcap-ng', 'libxcrypt', 'ncurses', 'attr', 'ncurses-native', 'curl-native', 'libpcre2-native', 'libcap-ng-native', 'unzip-native', 'libxml2', 'libffi', 'expat', 'xcb-proto', 'xorgproto', 'libxau', 'libpthread-stubs', 'libxdmcp', 'python3', 'gdbm', 'bzip2', 'libtirpc', 'readline', 'autoconf-archive', 'libnsl2', 'sqlite3', 'openssl']
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_package: Installed into pkgdata-sysroot: ['systemd', 'gcc-runtime', 'glibc', 'opkg-utils', 'base-files', 'shadow', 'libcap', 'xz', 'bash-completion', 'acl', 'kmod', 'util-linux', 'libxkbcommon', 'base-passwd', 'libgcc', 'linux-libc-headers', 'attr', 'libxcrypt', 'zlib', 'libcap-ng', 'ncurses', 'wayland-protocols', 'wayland', 'xkeyboard-config', 'libxcb', 'util-macros', 'expat', 'libxml2', 'libffi', 'libpthread-stubs', 'xcb-proto', 'xorgproto', 'libxau', 'libxdmcp', 'python3', 'openssl', 'sqlite3', 'autoconf-archive', 'bzip2', 'libnsl2', 'gdbm', 'libtirpc', 'readline']
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_package: adding update-alternatives calls to postinst/prerm for psplash-raspberrypi
+NOTE: psplash-0.1+gitAUTOINC+0a902f7cd8-r15 do_package: 	update-alternatives --install /usr/bin/psplash psplash /usr/bin/psplash-raspberrypi 100
+
